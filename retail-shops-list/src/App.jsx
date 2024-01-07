@@ -1,0 +1,15 @@
+import React from 'react';
+import StoreList from './StoreList';
+
+const storeData = [{"name":"Siempre Grocery","address":"220 Bicentennial Blvd, McAllen, TX 78501","phone":"+1 956-225-0069","email":"","lat":26.2027943,"lng":-98.2397607,"url":"http://www.siemprestores.com","country":"United States","state":"Texas","city":"McAllen","star_count":4.4,"rating_count":41,"category_name":"Grocery stores"},{"name":"Latino's Grocery Store","address":"620 N 23rd St, McAllen, TX 78501","phone":"","email":"","lat":26.2115008,"lng":-98.2440508,"url":"","country":"United States","state":"Texas","city":"McAllen","star_count":0,"rating_count":0,"category_name":"Grocery stores"},{"name":"Urban's Legacy Oriental Store","address":"2000 S McColl Rd, McAllen, TX 78503","phone":"+1 956-627-6634","email":"","lat":26.1838397,"lng":-98.2164128,"url":"","country":"United States","state":"Texas","city":"McAllen","star_count":0,"rating_count":0,"category_name":"Grocery stores"},{"name":"Secobasa Grocery LLC","address":"1328 E Hackberry Ave # B, McAllen, TX 78501","phone":"+1 956-668-9583","email":"","lat":26.2071561,"lng":-98.2048777,"url":"","country":"United States","state":"Texas","city":"McAllen","star_count":3,"rating_count":1,"category_name":"Grocery stores"},{"name":"9th and vine","address":"1100 W Vine Ave, McAllen, TX 78501","phone":"","email":"","lat":26.2236559,"lng":-98.2278133,"url":"","country":"United States","state":"Texas","city":"McAllen","star_count":0,"rating_count":0,"category_name":"Grocery stores"},{"name":"H-E-B Curbside Pickup Area","address":"McAllen, TX 78504","phone":"","email":"","lat":26.2658643,"lng":-98.2189325,"url":"","country":"United States","state":"Texas","city":"McAllen","star_count":0,"rating_count":0,"category_name":"Grocery stores"},{"name":"Lebanese & Mediterranean Food Market","address":"413 S 12th St, McAllen, TX 78501","phone":"+1 956-627-2478","email":"","lat":26.1995986,"lng":-98.2326808,"url":"","country":"United States","state":"Texas","city":"McAllen","star_count":4.4,"rating_count":34,"category_name":"Grocery stores"},{"name":"J C African Food Store","address":"1915 N 10th St, McAllen, TX 78501","phone":"+1 956-682-6700","email":"","lat":26.2211105,"lng":-98.2274846,"url":"","country":"United States","state":"Texas","city":"McAllen","star_count":4.8,"rating_count":16,"category_name":"Grocery stores"},{"name":"Keto Treats & Sweets","address":"6624 N 10th St, McAllen, TX 78504","phone":"+1 956-414-8913","email":"","lat":26.2622799,"lng":-98.2191089,"url":"http://www.ketosweetsntreatsllc.com","country":"United States","state":"Texas","city":"McAllen","star_count":4.1,"rating_count":17,"category_name":"Grocery stores"},{"name":"Balli Tortilla Factory","address":"203 S 17th St R, McAllen, TX 78501","phone":"+1 956-686-9682","email":"","lat":26.2026372,"lng":-98.2378168,"url":"","country":"United States","state":"Texas","city":"McAllen","star_count":0,"rating_count":0,"category_name":"Grocery stores"}];
+
+const App = () => {
+  return (
+    <div>
+      <h1>Lista de Tiendas</h1>
+      <StoreList storeData={storeData} />
+    </div>
+  );
+};
+
+export default App;
